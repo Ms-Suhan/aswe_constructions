@@ -1,6 +1,6 @@
 import React from 'react'
 import './Hero.css'
-import arrow_icon from '../../../public/top-arrow.png'
+import arrow_icon from '../../../src/assets/top-arrow.png'
 
 
 
