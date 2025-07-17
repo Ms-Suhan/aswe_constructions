@@ -1,0 +1,46 @@
+.projects-container{
+    max-width: 1320px;
+    margin: 0 auto;
+
+}
+.projects-container .title{
+    margin: 50px 0;
+
+}
+.projects-container .card{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.projects-container .left {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.projects-container .left h4{
+    font-size: 24px;
+}
+
+.projects-container .left span{
+    background-image: url(https://media.istockphoto.com/id/518249068/photo/aircraft-maneuvering-between-excavators-and-bulldozers.webp?a=1&b=1&s=612x612&w=0&k=20&c=H-SShmhC5k4tryIeSHBnBR-8sFkQEVRs0rMqGoN_Nng=);
+    width: 250px;
+    height: 70px;
+    background-position: center;
+    border-radius: 50px;
+    margin-right: 50px;
+}
+
+
+@media (max-width: 700px) {
+    .projects-container .card{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .card .left{
+        justify-content: space-between;
+    }
+    .card .right{
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+}

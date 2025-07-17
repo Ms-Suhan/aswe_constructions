@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="150" height="50" viewBox="0 0 300 100">
+  <!-- Triangle (roof) -->
+  <polygon points="20,80 50,20 80,80" fill="#FFFFFF"></polygon>
+  
+  <!-- ASWE Text -->
+  <text x="100" y="75" font-family="Montserrat, sans-serif" font-size="48" font-weight="bold" fill="#FFFFFF" letter-spacing="0">
+    ASWE
+  </text>
+</svg>
