@@ -166,7 +166,7 @@ function Hero() {
       </div>
     </div> */}
 
-    <div className="footer">
+    {/* <div className="footer">
       
       <div className="logo"><span>ASWE</span> CONSTRUCTIONS</div>
       <div className="footer-middle">
@@ -194,7 +194,7 @@ function Hero() {
     </div>
     <div className="copywright">
       &2025 ASWE CONSTRUCTIONS. All rights reserved.
-    </div>
+    </div> */}
 
 
     </div>
