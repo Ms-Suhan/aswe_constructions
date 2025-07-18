@@ -1,10 +1,12 @@
 import React from 'react'
 import './Hero.css'
-import arrow_icon from '../../../src/assets/top-arrow.png'
+import arrow_icon from './top_arrow.svg'
+import { useNavigate } from 'react-router-dom'
 
 
 
 function Hero() {
+  const navigate = useNavigate()
   
   return (
     <div className='hero'>
@@ -16,7 +18,7 @@ function Hero() {
     <div className="stats">
     <div className="col1">
         <h3>Request a consultancy</h3>
-        <div className="col-bottom">
+        <div className="col-bottom" onClick={() => navigate('/contact-us')}>
           <p>Book Now</p>
           <img src={arrow_icon} alt="" />
         </div>
@@ -134,7 +136,7 @@ function Hero() {
         <h6>At Aswe, We take complexity out of the construction.</h6>
         <p>We are a banglore based construction comapny supporting industries, develpers. Expertise in residential, industrial, commericial and mix-use projects. Our Goal? To provide seamless and conssistant timely delivery of serive,.</p>
         <p>From design to delivery we are every step of the way - offering expert advice, fast solutions. and a clear path through every stage of compliance.</p>
-        <button>Learn More</button>
+        <button onClick={() => navigate('/about-us')}>Learn More</button>
       </div>
     </div>
 

@@ -76,6 +76,10 @@
 }
 
 @media (max-width: 700px) {
+
+    .contactus-container{
+        margin-top: 3rem;
+    }
     .contactus-container .top{
         grid-template-columns: 1fr;
     }
@@ -85,7 +89,7 @@
     }
 
     .contactus-container .top .left-img img{
-        height: 50vh;
+        height: 40vh;
         object-fit: cover;
     }
 }

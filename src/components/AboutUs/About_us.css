@@ -7,6 +7,7 @@
 
 .aboutus-container .top{
     text-align: center;
+    margin-top: 6rem ;
     margin: 100px 0;
 }
 
@@ -99,6 +100,9 @@
     }
     .aboutus-container .img-section{
         grid-template-columns: 1fr;
+    }
+    .aboutus-container .top {
+        margin-top: 3rem;
     }
     
 }
