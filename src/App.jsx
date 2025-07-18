@@ -8,6 +8,7 @@ import {Routes, Route} from 'react-router-dom'
 import Projects from './pages/Projects/Projects'
 import AboutUs from './pages/AboutUs/AboutUs'
 import Footer from './components/Footer/Footer'
+import ContactUs from './pages/ContactUs/ContactUs'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -18,6 +19,7 @@ function App() {
       <Route path='/' element={<Hero />}/>
       <Route path='/projects' element={<Projects/>}/>
       <Route path='/about-us' element={<AboutUs/>}/>
+      <Route path='/contact-us' element={<ContactUs/>}/>
     </Routes>
     <Footer/>
     </>

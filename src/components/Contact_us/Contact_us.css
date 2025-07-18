@@ -1,0 +1,91 @@
+.contactus-container{
+    max-width: 1320px;
+    margin:  0 auto;
+    margin-top: 6rem;
+}
+
+.contactus-container .top{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    gap: 50px;
+}
+
+.contactus-container .top .left-img img{
+    width: 100%;
+    height: 600px;
+    /* height: 100%; */
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.contactus-container .top .contact-form h1{
+    font-size: 3rem;
+    margin-bottom: 8px;
+}
+
+.contactus-container .top .contact-form span{
+    color: #51babd;
+}
+
+.contactus-container .top .contact-form p{
+    font-size: 16px;
+}
+
+.contactus-container .form{
+    margin-top: 20px;
+}
+
+.contactus-container .form form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contactus-container .form form input{
+    position: relative;
+}
+.contactus-container .form form label{
+    /* position: absolute; */
+}
+
+
+.contactus-container .form .input-container{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+
+}
+
+.contactus-container .form input{
+    padding: 15px 20px;
+    border-radius: 50px;
+    outline: 0;
+    border: 1px solid gray;
+    /* margin: 20px 0; */
+
+}
+
+.contactus-container .form label{
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.contactus-container .form input::placeholder{
+    font-size: 16px;
+}
+
+@media (max-width: 700px) {
+    .contactus-container .top{
+        grid-template-columns: 1fr;
+    }
+
+    .contactus-container .top .left-img{
+        height: 100%;
+    }
+
+    .contactus-container .top .left-img img{
+        height: 50vh;
+        object-fit: cover;
+    }
+}
