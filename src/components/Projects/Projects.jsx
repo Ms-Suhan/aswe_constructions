@@ -5,7 +5,7 @@ function Project() {
   return (
    
     <div className="projects-container">
-      <div className="title"><h1>Projects</h1></div>
+      {/* <div className="title"><h1>Projects</h1></div>
       <div className="card">
 
       <div className="left">
@@ -17,7 +17,7 @@ function Project() {
       <div className="right">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit eum commodi recusandae magnam consequatur, illo natus ipsum optio corporis ducimus, ipsam voluptatem, quidem totam ad?</p>
       </div>
-      </div>
+      </div> */}
     </div>
 
     // <Test/>

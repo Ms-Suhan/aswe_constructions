@@ -66,7 +66,16 @@
     
 }
 
+.nav-middle ul li a{
+    text-decoration: none;
+    color: black;
+}
 
+.nav-middle ul li:hover{
+    /* background: #f0f0f0; */
+    border-bottom: 2px solid #f0f0f0;
+
+}
 
 .nav-middle ul li{
     font-size: 16px;
@@ -132,6 +141,13 @@ button:hover{
 }
 .mobile-menu ul li{
     margin-bottom: 50px;
+    text-decoration: none;
+    color: black;
+}
+
+.mobile-menu ul li a{
+    text-decoration: none;
+    color: #000;
 }
 
 .mobile-menu .title{

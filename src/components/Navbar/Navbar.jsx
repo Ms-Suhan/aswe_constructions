@@ -8,7 +8,7 @@ import close_icon from './close.svg'
 
 function Navbar() {
   const navigate = useNavigate()
-  const [display, setDisplay] = useState(false)
+  const [display, setDisplay] = useState(true)
 
   const handleClose = () => {
 
@@ -20,11 +20,11 @@ function Navbar() {
         <div className="nav-logo">ASWE</div>
         <div className="nav-middle">
             <ul>
-                <li onClick={() => navigate('/')}>Home</li>
-                <li onClick={() => navigate('/projects')}>Projects</li>
-                <li onClick={() => navigate('/about-us')}>About Us</li>
-                <li onClick={() => navigate('/join')}>join</li>
-                <li>more</li>
+                <li ><Link to={'/'}>Home</Link></li>
+                <li ><Link to={'/projects'}>Projects</Link></li>
+                <li ><Link to={'/about-us'}>About Us</Link></li>
+                <li ><Link to={'/join'}>Join</Link></li>
+                <li><Link to={'/more'}>More</Link></li>
             </ul>
 
         </div>
@@ -33,15 +33,13 @@ function Navbar() {
     </div>
     <div className={`mobile-menu ${display? 'd-none': ''}`}>
       <h1 className='title'>ASWE <img src={close_icon} alt="" onClick={() => setDisplay(true)}/></h1>
-    <ul>
-                
-                <li onClick={() => navigate('/')}>Home</li>
-                <li onClick={() => navigate('/projects')}>Projects</li>
-                <li onClick={() => navigate('/about-us')}>About Us</li>
-                <li onClick={() => navigate('/join')}>join</li>
-                <li>more</li>
+              <ul>
+                <li ><Link to={'/'}>Home</Link></li>
+                <li ><Link to={'/projects'}>Projects</Link></li>
+                <li ><Link to={'/about-us'}>About Us</Link></li>
+                <li ><Link to={'/join'}>Join</Link></li>
+                <li><Link to={'/more'}>More</Link></li>
             </ul>
-
     </div>
     </div>
   )
