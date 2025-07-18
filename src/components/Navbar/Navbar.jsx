@@ -1,11 +1,10 @@
 import React, { useState } from 'react'
 import './Navbar.css'
 import { Link, useNavigate, useSearchParams } from 'react-router-dom'
-import down_icon from '/home/suhan/Desktop/aswe/src/components/Navbar/down_arrow .png'
-import menu_icon from '../../../menu-bar.png'
+
 import menu from './menu.svg'
 import close_icon from './close.svg'
-import flattenColorPalette from 'tailwindcss/lib/util/flattenColorPalette'
+
 
 function Navbar() {
   const navigate = useNavigate()
