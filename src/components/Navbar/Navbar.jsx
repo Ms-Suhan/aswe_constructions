@@ -38,7 +38,7 @@ function Navbar() {
                 <li ><Link to={'/projects'} onClick={() => setDisplay(true)}>Projects</Link></li>
                 <li ><Link to={'/about-us'} onClick={() => setDisplay(true)}>About Us</Link></li>
                 <li ><Link to={'/join'} onClick={() => setDisplay(true)}>Join</Link></li>
-                <li><Link to={'/more'} onClick={() => setDisplay(true)}>More</Link></li>
+                <li><Link to={'/contact-us'} onClick={() => setDisplay(true)}>Contact Us</Link></li>
             </ul>
     </div>
     </div>
