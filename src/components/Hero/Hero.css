@@ -649,6 +649,19 @@
         gap: 25px;
     }
 
+    .recent-works-container{
+        margin-top: 60px;
+        padding-top: 40px;
+
+    }
+    .recent-works-container .recent-works{
+        padding-top: 15px;
+    }
+
+    .recent-works-container .recent-works .top  .left h1{
+        font-size: 2.8rem;
+    }
+
     .recent-works .top{
         grid-template-columns: 1fr;
     }
