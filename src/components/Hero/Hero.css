@@ -413,8 +413,8 @@
 }
 
 .recent-works-container{
-    /* background-color: #51b9bd56; */
-    background: #1E3E62;
+    background-color: #51b9bd56;
+    /* background: #1E3E62; */
     border-radius: 25px;
     margin-top: 200px;
     padding-top: 100px;
@@ -539,9 +539,11 @@
 @media (max-width: 700px) {
     .hero-container h1{
         font-size: 3.5rem;
+        /* line-height: 2.8rem; */
     }
     .hero-container {
-        height: 60vh;
+        padding-top: 40px;
+        height: 50vh;
     }
     
     .why-section{
