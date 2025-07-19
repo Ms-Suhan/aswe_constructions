@@ -543,7 +543,8 @@
     }
     .hero-container {
         padding-top: 40px;
-        height: 50vh;
+        height: 55vh;
+        margin-bottom: 50px;
     }
     
     .why-section{
