@@ -1,6 +1,19 @@
 import React from 'react'
 import './Contact_us.css'
+import appwriteService from '../../appwrite/config'
+import { data } from 'react-router-dom'
+
 function Contact_us() {
+
+    const handleSubmit = async(data) =>{
+        try {
+            console.log(data)
+             await appwriteService.createQuery(data)
+        } catch (error) {
+            console.log(`Error :: Appwrite Error :: creating query in contact_us: ${error}`)
+        }
+
+    }
   return (
     <div className="contactus-container">
         <div className="top">
@@ -11,18 +24,18 @@ function Contact_us() {
                 <h1>Let's Get In Touch</h1>
                 <p>or just reach out manually to <span>aswemailers@gmail.com</span></p>
                 <div className="form">
-                    <form action="">
+                    <form action={() => handleSubmit(data)}>
 
                     <div className="name-lastname">
                     <div className="input-container">
                     <label htmlFor="name">Enter Your Name</label>
                     <input type="text" placeholder='Name' id='name' />
                     </div>
-                    <div className="input-container">
+                    {/* <div className="input-container">
                     <label htmlFor="last-name">Enter Your Last Name</label>
                     <input type="text" name="name" id="name" placeholder='Last Name' />
 
-                    </div>
+                    </div> */}
                     
                     </div>
                     <div className="input-container">
@@ -33,7 +46,7 @@ function Contact_us() {
                     <label htmlFor="phone">Phone Number</label>
                     <input type="text" placeholder='Enter your phone number' />
                     <div className="input-container"></div>
-                    <button type='submit'>Submit Form</button>
+                    <button type='submit'  >Submit Form</button>
 
                     </form>
 
