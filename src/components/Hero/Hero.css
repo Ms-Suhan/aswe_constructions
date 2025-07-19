@@ -413,7 +413,8 @@
 }
 
 .recent-works-container{
-    background-color: #51b9bd56;
+    /* background-color: #51b9bd56; */
+    background: #1E3E62;
     border-radius: 25px;
     margin-top: 200px;
     padding-top: 100px;
@@ -665,6 +666,11 @@
 
     .recent-works-container .recent-works .top  .left h1{
         font-size: 2.8rem;
+        text-align: center;
+    }
+    .recent-works-container .recent-works .top  .left p{
+        /* font-size: 2.8rem; */
+        text-align: center;
     }
 
     .recent-works .top{

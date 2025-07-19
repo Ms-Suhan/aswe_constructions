@@ -4,6 +4,7 @@ import arrow_icon from './top_arrow.svg'
 import { useNavigate } from 'react-router-dom'
 import fatory_img from './factory-img.jpg'
 import location_on from './location_on.svg'
+import Scroll from '../../components/Scroll/Scroll'
 
 
 function Hero() {
@@ -67,7 +68,7 @@ function Hero() {
         <div className="left">
 
           <h1>Recent Works</h1>
-          <p>Proven excellence across 15p+ projects in Banglore.</p>
+          <p>We specialize in a wide range of construction services, including residential, commercial, and industrial projects. From initial design to final inspection, we work closely with our clients to understand their unique needs and vision.</p>
           <h3>Our core design idea's.</h3>
           <ul>
             <li>Site senitive architecture</li>
@@ -235,9 +236,9 @@ function Hero() {
         <button onClick={() => navigate('/about-us')}>Learn More</button>
       </div>
     </div> */}
-
+  <Scroll/>
     
-   
+   <div className="testimonials"></div>
 
 
     </div>
