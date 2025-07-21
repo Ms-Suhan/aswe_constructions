@@ -1,11 +1,11 @@
 import React from 'react'
 import './Login.css'
-import Login from '../../components/Login/Login'
+import Login_Component from '../../components/Login/Login_Component'
 
 
 function Login() {
   return (
-    <Login/>
+    <Login_Component/>
   )
 }
 

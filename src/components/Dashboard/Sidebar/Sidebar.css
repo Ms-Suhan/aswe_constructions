@@ -1,0 +1,48 @@
+.sidebar-container{
+    padding: 16px;
+    background: #d3d3d394;
+    /* background-color: white; */
+    border-radius: 12px;
+    /* position: fixed; */
+    /* position: relative; */
+}
+
+.sidebar-container h2{
+    font-size: 20px;
+}
+.sidebar-container .navigation{
+    margin-top: 20px;
+}
+
+.sidebar-container .navigation button{
+    background: none;
+    color: black;
+    padding: 0;
+    display: block;
+    border-radius: 8px;
+    width: 100%;
+    text-align: left;
+    margin: 12px 0;
+    font-size: 16px;
+    padding: 12px 8px;
+    
+}
+
+.sidebar-container .navigation button:hover{
+    background: white;
+}
+
+.sidebar-container .navigation button:active{
+    background: white;
+}
+
+
+@media (max-width: 700px) {
+    .sidebar-container .navigation {
+        display: flex;
+        overflow: scroll;
+    }
+    .sidebar-container  .bottom button{
+        display: none;
+    }
+}

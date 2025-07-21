@@ -3,6 +3,7 @@ import conf from "../conf/conf";
 import { Client, Account, ID, Databases,Storage, Query } from "appwrite";
 
 
+
 export class Service{
     client = new Client();
     databases;
@@ -30,6 +31,17 @@ export class Service{
             )
         } catch (error) {
             console.log(`Error :: Appwrite Error :: createQuery: ${error}`)
+        }
+    }
+
+    async getQueries(){
+        try {
+            return await this.databases.listDocuments(
+                conf.appwriteDatabaseId,
+                conf.appwriteCollectionId
+            )
+        } catch (error) {
+            console.log(`Error :: Appwrite Error :: getQueries: ${error}`)
         }
     }
 }
