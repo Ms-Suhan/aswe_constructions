@@ -24,7 +24,7 @@ function Register_Component() {
             navigate('/login')
         }
         
-        console.log(data)
+        // console.log(data)
         
     }
 

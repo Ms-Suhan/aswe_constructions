@@ -20,7 +20,7 @@ function Login_Component() {
         dispatch(login(data))
         navigate('/')
       }
-      console.log(data)
+      // console.log(data)
   }
 
   return (
