@@ -51,7 +51,7 @@ function Navbar() {
                 {authStatus? null : (<li ><Link to={'/login'} onClick={() => setDisplay(true)}>Login</Link></li>)}
                 {authStatus? null : (<li ><Link to={'/register'} onClick={() => setDisplay(true)}>Register</Link></li>)}
                 {authStatus? (<li><Link onClick={handleLogout}>Logout</Link></li>) : null}
-                {authStatus? (<li><Link to={'/dashboard'}>Dashboard</Link></li>) : null}
+                {authStatus? (<li><Link to={'/dashboard'} onClick={() => setDisplay(true)}>Dashboard</Link></li>) : null}
                 
                
             </ul>
