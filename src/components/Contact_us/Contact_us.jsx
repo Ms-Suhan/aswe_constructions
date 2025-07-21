@@ -12,7 +12,7 @@ function Contact_us() {
 
     const handleSubmitData = async(data) =>{
         try {
-            console.log(data)
+            // console.log(data)
              await appwriteService.createQuery(data)
              
              navigate('/')

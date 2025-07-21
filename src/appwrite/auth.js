@@ -1,5 +1,7 @@
 import conf from '../conf/conf'
 import {Client, Account, ID} from 'appwrite'
+// import toast,{ Toaster } from 'react-hot-toast';
+import { Slide, toast } from 'react-toastify';
 
 
 export class AuthService{
@@ -19,10 +21,23 @@ export class AuthService{
         if(userAccount){
             // login user
         }else{
-            return userAccount
+            return null
         }
         } catch (error) {
+            toast.warn(error.message, {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: false,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "dark",
+                transition: Slide,
+                });
+            
             console.log(`Error :: Appwrite Error :: createAccount: ${error}`)
+            throw error
         }
     }
 
@@ -30,6 +45,18 @@ export class AuthService{
         try {
             return await this.account.createEmailPasswordSession(email,password)
         } catch (error) {
+            toast.warn(error.type === 'user_invalid_credentials'? "The email or password you entered is incorrect. Please try again." : error.message , {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: false,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "dark",
+                transition: Slide,
+                });
+                console.log(error)
             console.log(`Error :: Appwrite Error :: login: ${error}`)
         }
         return null

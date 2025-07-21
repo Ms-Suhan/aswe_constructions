@@ -11,14 +11,18 @@ function Login_Component() {
   const {register, handleSubmit} = useForm();
   const [data , setData] = useState({});
   const dispatch = useDispatch();
+  const authData = useSelector(state => state.auth.status)
  
 
   const handleSubmitData = async(data) => {
-      await authService.logout()
+
+    if(authData){
+        await authService.logout()
+      }
       const userData = await authService.login(data)
       if(userData){
         dispatch(login(data))
-        navigate('/')
+        navigate('/dashboard')
       }
       // console.log(data)
   }

@@ -14,6 +14,7 @@ import Login from './pages/Login/Login'
 import Register from './pages/Register/Register'
 import Dashboard from './pages/Dashboard/Dashboard'
 import { useDispatch, useSelector } from 'react-redux'
+import { ToastContainer } from 'react-toastify'
 
 
 
@@ -34,6 +35,7 @@ function App() {
       <Route path='/register' element={<Register/>} />
       <Route path='/dashboard' element={authStatus? <Dashboard/> : <Login/>}/>
     </Routes>
+      
     <Footer/>
     </>
   )

@@ -44,7 +44,7 @@ function Hero() {
 
 <div className="numbers">
     <div className="numb-card">
-          <h2>15+</h2>
+          <h2>15<span>+</span></h2>
           <h3>Years of Experience</h3>
         </div>
         <div className="numb-card">
@@ -61,22 +61,22 @@ function Hero() {
         </div>
     </div>
 
-<div className="recent-works-container">
+<div className="ongoing-works-container">
 
-    <div className="recent-works">
+    <div className="ongoing-projects">
       <div className="top">
         <div className="left">
 
-          <h1>Recent Works</h1>
+          <h1>Ongoing Projects</h1>
           <p>We specialize in a wide range of construction services, including residential, commercial, and industrial projects. From initial design to final inspection, we work closely with our clients to understand their unique needs and vision.</p>
           <h3>Our core design idea's.</h3>
-          <ul>
+          {/* <ul>
             <li>Site senitive architecture</li>
             <li>Integrated Design  + Building approach</li>
             <li>Comnteprary, Yet timeless Asthetics</li>
             <li>User centric spaces</li>
             <li>Substanitally at the Core</li>
-          </ul>
+          </ul> */}
         </div>
         <div className="right"></div>
       </div>
@@ -85,7 +85,7 @@ function Hero() {
       <div className="card">
           <div className="img"><img src="https://images.unsplash.com/photo-1611893208029-8bae3dd78bff?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" /></div>
           <div className="info">
-            <h1>Wintec Limited</h1>
+            <h1>Aditya Birla Limited</h1>
             <div className="location">
               <span><img src={location_on} alt="" />Banglore</span>
               <button>Details</button>
@@ -95,7 +95,7 @@ function Hero() {
         <div className="card">
           <div className="img"><img src="https://plus.unsplash.com/premium_photo-1677522805495-20700faf5802?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" /></div>
           <div className="info">
-            <h1>Wintec Limited</h1>
+            <h1>Somerset Limited</h1>
             <div className="location">
               <span><img src={location_on} alt="" />Banglore</span>
               <button>Details</button>
@@ -123,7 +123,7 @@ function Hero() {
           </div>
         </div>
         <div className="card">
-          <div className="img"><img src="https://images.unsplash.com/photo-1565086858328-032489ebd45a?q=80&w=1467&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" /></div>
+          <div className="img"><img src="https://plus.unsplash.com/premium_photo-1674043992234-2107f7de6ab5?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" /></div>
           <div className="info">
             <h1>Wintec Limited</h1>
             <div className="location">
@@ -137,6 +137,81 @@ function Hero() {
     </div>
 </div>
 
+<div className="recent-works-container">
+
+    <div className="recent-works">
+      <div className="top">
+        <div className="left">
+
+          <h1>Recent Works</h1>
+          <p>We specialize in a wide range of construction services, including residential, commercial, and industrial projects. From initial design to final inspection, we work closely with our clients to understand their unique needs and vision.</p>
+          <h3>Our core design idea's.</h3>
+          <ul>
+            <li>Site senitive architecture</li>
+            <li>Integrated Design  + Building approach</li>
+            <li>Comnteprary, Yet timeless Asthetics</li>
+            <li>User centric spaces</li>
+            <li>Substanitally at the Core</li>
+          </ul>
+        </div>
+        <div className="right"></div>
+      </div>
+
+      <div className="projects-cards">
+      <div className="card">
+          <div className="img"><img src="https://images.unsplash.com/photo-1611893208029-8bae3dd78bff?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" /></div>
+          <div className="info">
+            <h1>Aditya Birla Limited</h1>
+            <div className="location">
+              <span><img src={location_on} alt="" />Banglore</span>
+              <button>Details</button>
+            </div>
+          </div>
+        </div>
+        <div className="card">
+          <div className="img"><img src="https://plus.unsplash.com/premium_photo-1677522805495-20700faf5802?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" /></div>
+          <div className="info">
+            <h1>Somerset Limited</h1>
+            <div className="location">
+              <span><img src={location_on} alt="" />Banglore</span>
+              <button>Details</button>
+            </div>
+          </div>
+        </div>
+        <div className="card">
+          <div className="img"><img src="https://images.unsplash.com/photo-1693064203616-2e78760f5df7?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" /></div>
+          <div className="info">
+            <h1>Wintec Limited</h1>
+            <div className="location">
+              <span><img src={location_on} alt="" />Banglore</span>
+              <button>Details</button>
+            </div>
+          </div>
+        </div>
+        <div className="card">
+          <div className="img"><img src="https://images.unsplash.com/photo-1565086858328-032489ebd45a?q=80&w=1467&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" /></div>
+          <div className="info">
+            <h1>Wintec Limited</h1>
+            <div className="location">
+              <span><img src={location_on} alt="" />Banglore</span>
+              <button>Details</button>
+            </div>
+          </div>
+        </div>
+        <div className="card">
+          <div className="img"><img src="https://plus.unsplash.com/premium_photo-1674043992234-2107f7de6ab5?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" /></div>
+          <div className="info">
+            <h1>Wintec Limited</h1>
+            <div className="location">
+              <span><img src={location_on} alt="" />Banglore</span>
+              <button>Details</button>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+</div>
     <div className="why-section">
       <div className="left">
         <img src="https://images.unsplash.com/photo-1712567604499-08f207054260?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fGRhcmslMjBidWlsZGluZ3xlbnwwfHwwfHx8MA%3D%3D" alt="" />

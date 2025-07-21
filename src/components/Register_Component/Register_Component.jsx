@@ -3,6 +3,7 @@ import './Register_Component.css'
 import { useNavigate } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import authService from '../../appwrite/auth';
+import { toast } from 'react-toastify';
 
 
 
@@ -16,13 +17,18 @@ function Register_Component() {
 
 
     const handleSubmitData = async(data) => {
-
-
-        const userData =  authService.createAccount(data).then(() => navigate('/login'))
+      try {
+        const userData =  authService.createAccount(data).then(() => navigate('/login')).catch(error => toast(error))
         console.log(userData)
-        if(userData){
-            navigate('/login')
-        }
+        // if(userData){
+        //   toast("logged In")
+        //       // console.log(userData)
+        //       navigate('/login')
+        //   }
+      } catch (error) {
+        toast.error('error')
+      }
+
         
         // console.log(data)
         
