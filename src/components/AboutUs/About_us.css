@@ -18,6 +18,7 @@
 
 .aboutus-container .top p{
     font-size: 20px;
+
 }
 
 .aboutus-container .img-section{
@@ -37,9 +38,10 @@
 }
 
 .aboutus-container .right p{
-    font-size: 20px;
+    font-size: 18px;
     /* margin: 20px 0; */
     margin-bottom: 32px;
+    text-align: justify;
 }
 
 
@@ -76,8 +78,10 @@
 }
 
 .team .card p{
-    font-weight: 600;
+    font-weight: 500;
+    color: gray;
     margin-bottom: 20px;
+
 }
 
 
@@ -92,6 +96,41 @@
 
 }
 
+.vision-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 100px;
+}
+
+.vision-container .mission,.vision{
+
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.vision-container img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.vision-container h2{
+    font-size: 2rem;
+    margin-top: 24px;
+}
+
+.vision-container p{
+    font-size: 1rem;
+    margin-top: 16px;
+    color: gray;
+}
+
 
 @media (max-width: 700px) {
     .team{
@@ -104,5 +143,14 @@
     .aboutus-container .top {
         margin-top: 3rem;
     }
-    
+    .vision-container{
+        grid-template-columns: 1fr;
+    }
+    .aboutus-container button{
+        width: 100%;
+    }
+
+    .aboutus-container .right p{
+        font-size: 16px;
+    }
 }

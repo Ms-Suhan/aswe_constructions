@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom'
 import fatory_img from './factory-img.jpg'
 import location_on from './location_on.svg'
 import Scroll from '../../components/Scroll/Scroll'
+import Customer_logo_marquee from '../Customer_logo_marquee/Customer_logo_marquee'
 
 
 function Hero() {
@@ -60,6 +61,7 @@ function Hero() {
           <h3>Customers</h3>
         </div>
     </div>
+    <Customer_logo_marquee/>
 
 <div className="ongoing-works-container">
 
@@ -69,7 +71,7 @@ function Hero() {
 
           <h1>Ongoing Projects</h1>
           <p>We specialize in a wide range of construction services, including residential, commercial, and industrial projects. From initial design to final inspection, we work closely with our clients to understand their unique needs and vision.</p>
-          <h3>Our core design idea's.</h3>
+          {/* <h3>Our core design idea's.</h3> */}
           {/* <ul>
             <li>Site senitive architecture</li>
             <li>Integrated Design  + Building approach</li>
@@ -132,6 +134,16 @@ function Hero() {
             </div>
           </div>
         </div>
+        <div className="card">
+          <div className="img"><img src="https://images.unsplash.com/photo-1632398535774-b95738ddff68?q=80&w=1062&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" /></div>
+          <div className="info">
+            <h1>Wintec Limited</h1>
+            <div className="location">
+              <span><img src={location_on} alt="" />Banglore</span>
+              <button>Details</button>
+            </div>
+          </div>
+        </div>
         
       </div>
     </div>
@@ -145,14 +157,14 @@ function Hero() {
 
           <h1>Recent Works</h1>
           <p>We specialize in a wide range of construction services, including residential, commercial, and industrial projects. From initial design to final inspection, we work closely with our clients to understand their unique needs and vision.</p>
-          <h3>Our core design idea's.</h3>
+          {/* <h3>Our core design idea's.</h3>
           <ul>
             <li>Site senitive architecture</li>
             <li>Integrated Design  + Building approach</li>
             <li>Comnteprary, Yet timeless Asthetics</li>
             <li>User centric spaces</li>
             <li>Substanitally at the Core</li>
-          </ul>
+          </ul> */}
         </div>
         <div className="right"></div>
       </div>
@@ -181,7 +193,7 @@ function Hero() {
         <div className="card">
           <div className="img"><img src="https://images.unsplash.com/photo-1693064203616-2e78760f5df7?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" /></div>
           <div className="info">
-            <h1>Wintec Limited</h1>
+            <h1>Emco Energy Ltd</h1>
             <div className="location">
               <span><img src={location_on} alt="" />Banglore</span>
               <button>Details</button>
@@ -191,7 +203,7 @@ function Hero() {
         <div className="card">
           <div className="img"><img src="https://images.unsplash.com/photo-1565086858328-032489ebd45a?q=80&w=1467&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" /></div>
           <div className="info">
-            <h1>Wintec Limited</h1>
+            <h1>John Crane Sealing System</h1>
             <div className="location">
               <span><img src={location_on} alt="" />Banglore</span>
               <button>Details</button>
@@ -201,7 +213,7 @@ function Hero() {
         <div className="card">
           <div className="img"><img src="https://plus.unsplash.com/premium_photo-1674043992234-2107f7de6ab5?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" /></div>
           <div className="info">
-            <h1>Wintec Limited</h1>
+            <h1>Tce Tata Consulting Engineers Ltd.</h1>
             <div className="location">
               <span><img src={location_on} alt="" />Banglore</span>
               <button>Details</button>
