@@ -22,7 +22,7 @@ function Customer_logo_marquee() {
               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFB7Ryz9BRDBRFEdrTxetYi18n0nEeuNnneTMurtvC8Od3nlZDc-u-gBOvZhtdbTlnld4&usqp=CAU" alt="" />
             </div>
             <div className="logo logo6">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT46NYHL2lvB06vBvMbmj9ONtuZ3O10MReEoA&s" alt="" />
+              <img src="https://funworld-blr.s3.ap-south-1.amazonaws.com/public/logo2.png" alt="" />
             </div>
         </div>
     </div>

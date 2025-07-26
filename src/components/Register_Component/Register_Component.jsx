@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import authService from '../../appwrite/auth';
 import { toast } from 'react-toastify';
+import conf from '../../conf/conf';
 
 
 
@@ -15,11 +16,18 @@ function Register_Component() {
     // const inputRef = useRef();
 
 
-
-    const handleSubmitData = async(data) => {
+  // console.log(conf.asweToken)
+    const handleSubmitData = async (data) => {
       try {
-        const userData =  authService.createAccount(data).then(() => navigate('/login')).catch(error => toast(error))
-        console.log(userData)
+        if(data.token == conf.asweToken){
+          // console.log(conf.asweToken)
+          return await  authService.createAccount(data)
+        }
+        else{
+           toast.error("Invlaid Token")
+
+        }
+        // console.log(userData)
         // if(userData){
         //   toast("logged In")
         //       // console.log(userData)

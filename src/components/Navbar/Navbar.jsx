@@ -6,6 +6,7 @@ import close_icon from './close.svg'
 import { useSelector, useDispatch } from 'react-redux'
 import { logout } from '../../store/loginStore'
 import authService from '../../appwrite/auth'
+import aswe_logo from '../../../Aswe_logo.png'
 
 
 function Navbar() {
@@ -24,7 +25,10 @@ function Navbar() {
     <div className="navbar">
 
     <div className="navbar-container">
-        <div className="nav-logo" onClick={() => navigate('/')}>ASWE</div>
+        <div className="nav-logo" onClick={() => navigate('/')}>
+         ASWE 
+          
+          </div>
         <div className="nav-middle">
             <ul>
                 <li ><Link to={'/'}>Home</Link></li>
