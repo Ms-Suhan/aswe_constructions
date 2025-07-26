@@ -13,12 +13,12 @@ function Footer() {
         <h4>Contact Details</h4>
         <div>
           <h5>Address</h5>
-          <p>Nagarbavi, 3rd cross,banglore</p>
+          <p>#618, 2nd Floor, Vinayaka Layout, BDA 80ft, Main Road, Nagarbhavi, Banglore-560072</p>
         </div>
         <div>
           <h5>Call us</h5>
-          <p>9632620908</p>
-          <p>asweMailers@gmail.com</p>
+          <p>99019 30183</p>
+          <p>aswemailers@gmail.com</p>
         </div>
       </div>
       <div className="footer-right">
